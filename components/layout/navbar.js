@@ -5,13 +5,13 @@ function NavBar() {
     return ( 
         <>
             <header>
-                <nav className="flex flex-row justify-around items-center p-1">
+                <nav className="container m-auto flex flex-row justify-between items-center p-1">
                     <div className="flex items-center flex-row">
-                        <span className="text-blue-500 font-bold">eyad karim</span>
+                        <Image src='ek.svg' width={32} height={32}/>
                     </div>
-                    <ul className="flex flex-row items-center gap-3" >
-                        <li className="p-2 transition-all hover:scale-105 hover:bg-blue-500 hover:text-white" ><Link href={'/'}>home</Link></li>
-                        <li className="p-2 transition-all hover:scale-105 hover:bg-blue-500 hover:text-white" ><Link href={'/'}>home</Link></li>
+                    <ul className="flex flex-row items-center gap-3 py-2" >
+                        <li className="mx-2 transition-all hover:text-blue" ><Link href={'/'}>Home</Link></li>
+                        <li className="mx-2 transition-all hover:text-blue" ><Link href={'/about'}>About</Link></li>
                     </ul>
                 </nav>
             </header>

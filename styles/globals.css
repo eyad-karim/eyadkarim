@@ -1,10 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-.hero-section{
-    background-image: linear-gradient(to top,rgba(0, 0, 0, 0.4),transparent),url('/ekimg.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+html{
+    font-family: 'Roboto', sans-serif;
 }
