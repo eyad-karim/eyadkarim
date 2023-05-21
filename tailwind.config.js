@@ -18,6 +18,16 @@ module.exports = {
       white: "#fff",
       blue: "#0085ff",
     },
+    screens: {
+      'sm': '320px',
+      // => @media (min-width: 640px) { ... }
+
+      'md': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      'lg': '1280px',
+      // => @media (min-width: 1280px) { ... }
+    },
   },
   plugins: [],
 }
