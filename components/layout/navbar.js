@@ -10,8 +10,8 @@ function NavBar() {
                         <Image src='ek.svg' width={32} height={32}/>
                     </div>
                     <ul className="flex flex-row items-center gap-3 py-2" >
-                        <li className="mx-2 transition-all hover:text-blue" ><Link href={'/'}>Home</Link></li>
-                        <li className="mx-2 transition-all hover:text-blue" ><Link href={'/about'}>About</Link></li>
+                        <li className="mx-2 transition-all hover:text-blue-light" ><Link href={'/'}>Home</Link></li>
+                        <li className="mx-2 transition-all hover:text-blue-light" ><Link href={'/contact'}>Contact</Link></li>
                     </ul>
                 </nav>
             </header>
