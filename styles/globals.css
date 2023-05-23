@@ -4,12 +4,15 @@
 html{
     font-family: 'Poppins', sans-serif;
 }
-.somp-card {
-    @apply border-[1px] border-l-8 border-blue-light p-2 rounded-md bg-white 
-}
 .input {
     @apply outline-none border-[1px] border-blue-light rounded-md p-1 m-1
 }
 .button {
     @apply outline-none border-[1px] border-blue-dark rounded-md py-1 px-3 bg-blue-light text-white hover:bg-white hover:text-blue-light
+}
+.project-card {
+    @apply p-2 rounded-md bg-white border-2 border-light
+}
+.ol{
+   list-style-type: disc; 
 }
