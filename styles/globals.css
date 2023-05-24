@@ -5,10 +5,10 @@ html{
     font-family: 'Poppins', sans-serif;
 }
 .input {
-    @apply outline-none border-[1px] border-black hover:border-blue-light rounded-md p-1 m-1 focus:border-blue-light bg-light focus:bg-white
+    @apply bg-light border border-blue-dark text-black text-sm rounded-lg focus:ring-blue-light focus:border-blue-light block w-full p-2.5 outline-none
 }
 .button {
-    @apply outline-none border-[1px] border-blue-light rounded-md py-1 px-3 bg-blue-light text-white hover:bg-white hover:text-blue-light
+    @apply transition-all text-white bg-blue-light hover:bg-blue-dark focus:ring-2 focus:outline-none focus:ring-blue-light font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center
 }
 .project-card {
     @apply p-2 rounded-md bg-white border-2 border-light

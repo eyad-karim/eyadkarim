@@ -1,19 +1,19 @@
 function Contact() {
     return (<>
-        <section className="container mx-auto p-5 h-[85vh] flex justify-center items-center">
-            <from method="post" className="bg-light p-10 rounded-lg">
-                <h2 className="text-[1.5rem]">Contact</h2>
-                <lable for="name">Name:</lable>
-                <input required  id="name" name="name" type="text" placeholder="Enter your name" className="input" i />
-                <br/>
-                <lable for="email">Email:</lable>
-                <input required  id="email" name="email" type="email" placeholder="Enter your email" className="input" />
-                <br/>
-                <lable for="phonenumber">Phone number:</lable>
-                <input required id="phonenumber" name="phonenumber" type="text" placeholder="Enter your phone number" className="input" />
-                <br/>
+        <section className="container mx-auto p-5 my-4 flex justify-center items-center">
+            <form action="/api/form" method="post" className="flex flex-col gap-3 bg-white border-[1px] border-blue-light p-5 rounded-lg">
+                <label htmlFor="first">first name</label>
+                <input
+                    type="text"
+                    id="first"
+                    name="first"
+                    required
+                    className="input"
+                />
+                <label htmlFor="last">last name:</label>
+                <input type="text" id="last" name="last" required  className="input"/>
                 <button type="submit" className="button">Submit</button>
-            </from>
+            </form>
         </section>
     </>);
 }
