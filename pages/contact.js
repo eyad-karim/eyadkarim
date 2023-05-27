@@ -22,7 +22,7 @@ function Contact() {
             body: JSON.stringify({user:inputVal,msg:textAreaVal})
         })
         const data = await res.json()
-        setInputVal("")
+        fetchMsgs()
         setTextAreaVal("")
     }
 
@@ -59,16 +59,18 @@ function Contact() {
                 <button type="submit" className="button">Submit</button>
             </form>
         </section>
-        <section className="container mx-auto p-2 my-4">
-            <button onClick={fetchMsgs} className="button mb-3">show msgs</button>
-            {msgs.map((item) => {
-                return(
-                    <div key={item.id} className="flex flex-row items-center gap-2 bg-light p-3 border-[1] border-black rounded-md mb-2">
-                        <span className="text-blue-light">{item.user}</span>
-                        <p className="break-all">{item.msg}</p>
-                    </div>
-                )
-            })}
+        <section className="container mx-auto my-4">
+            <button onClick={fetchMsgs} className="button mb-3">show messages</button>
+            <div className="overflow-auto p-2" style={{maxHeight:"80vh"}}>
+                {msgs.map((item) => {
+                    return(
+                        <div key={item.id} className="flex flex-col gap-2 bg-light p-3 border-[1] border-black rounded-md mb-2">
+                            <span className="text-blue-light">{item.user}</span>
+                            <p className="break-all">{item.msg}</p>
+                        </div>
+                    )
+                })}
+            </div>
         </section>
     </>);
 }
