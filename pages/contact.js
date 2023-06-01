@@ -28,7 +28,7 @@ function Contact() {
 
     return (<>
         <Head>
-            <title>Contact</title>
+            <title>Contact page</title>
         </Head>
         <section className="container mx-auto py-[100px] my-4">
             <form onSubmit={handelSubmit} className="flex flex-col gap-3 bg-white border-[1px] border-blue-light p-5 rounded-lg">

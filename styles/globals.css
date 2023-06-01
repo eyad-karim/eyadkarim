@@ -3,7 +3,6 @@
 @tailwind utilities;
 html{
     font-family: 'Poppins', sans-serif;
-    scroll-behavior: smooth !important;
 }
 .input {
     @apply bg-light border border-blue-dark text-black text-sm rounded-lg focus:ring-blue-light focus:border-blue-light block w-full p-2.5 outline-none
