@@ -8,6 +8,9 @@ export const getStaticProps = async () => {
 }
 function Data({data}) {
     return (<>
+        <Head>
+            <title>Data</title>
+        </Head>
         <div className="container mx-auto flex flex-col gap-2">
             {data.map(i => (
                 <div key={i.id}>
