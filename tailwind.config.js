@@ -17,7 +17,7 @@ module.exports = {
       black: "#000",
       white: "#fff",
       light: "#f1f1f1",
-      blue: {light:"#0085ff",dark:"#003a6e"},
+      blue: {light:"#0085ff",dark:"#000015"},
     },
     screens: {
       'sm': '320px',

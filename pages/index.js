@@ -11,9 +11,9 @@ export default function Home() {
         <title>Home</title>
       </Head>
       <HeroSection />
+      <SOMP />
       <AboutMeSection />
       <HowILearn />
-      <SOMP />
     </>
   )
 }
