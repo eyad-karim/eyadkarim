@@ -1,3 +1,5 @@
+import Head from "next/head";
+
 function NotFound() {
     return (<>
         <Head>
