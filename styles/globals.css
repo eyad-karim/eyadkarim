@@ -5,14 +5,30 @@ html{
     font-family: 'Poppins', sans-serif;
 }
 .input {
-    @apply bg-light border border-blue-dark text-black text-sm rounded-lg focus:ring-blue-light focus:border-blue-light block w-full p-2.5 outline-none
+    @apply bg-light border-b-2 border-blue-dark text-black text-sm rounded-sm focus:border-blue-light block w-full p-2.5 outline-none
 }
 .button {
-    @apply transition-all text-white bg-blue-light hover:scale-110 outline-none rounded-lg px-5 py-2.5 text-center
+    @apply transition-all text-blue-light hover:text-white border-2 border-blue-light hover:bg-blue-light outline-none rounded-lg px-5 py-2.5 text-center
 }
 .project-card {
-    @apply transition-all p-4 rounded-lg bg-white shadow-lg hover:scale-110 border-2 border-blue-light
+    @apply p-4
 }
 .ol{
-   list-style-type: disc; 
+   list-style-type: decimal; 
+}
+.ol > li::marker {
+    @apply text-blue-light
+}
+
+.hero-section {
+    background-image:
+    linear-gradient(to top, rgba(61, 2, 125, 0.633),rgba(16, 3, 63, 0.73)),
+    url("/hero-bg.png");
+    background-position: left top;
+    background-size: 50%;
+    background-attachment: fixed;
+}
+
+.section{
+    @apply py-[100px] px-5 container mx-auto my-10 bg-white rounded-lg /*border-2 border-blue-light*/
 }

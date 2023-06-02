@@ -30,44 +30,46 @@ function Contact() {
         <Head>
             <title>Contact page</title>
         </Head>
-        <section className="container mx-auto py-[100px] my-4">
-            <form onSubmit={handelSubmit} className="flex flex-col gap-3 bg-white border-[1px] border-blue-light p-5 rounded-lg">
-                <h3 className="text-[1.5rem]">Contact me</h3>
-                <div className="flex flex-row gap-2 items-center">
-                    <label htmlFor="username">username</label>
-                    <input
-                        value={inputVal}
-                        type="text"
-                        id="username"
-                        name="username"
-                        required
-                        className="input"
-                        placeholder="username"
-                        onChange={e => setInputVal(e.target.value)}
-                    />
-                </div>
-                <div className="flex flex-col gap-2">
-                    <label htmlFor="msg">message</label>
-                    <textarea
-                        value={textAreaVal}
-                        id="msg"
-                        name="msg"
-                        required
-                        className="input"
-                        placeholder="message"
-                        onChange={e => setTextAreaVal(e.target.value)}
-                    >
-                    </textarea>
-                </div>
-                <button type="submit" className="button">Submit</button>
-            </form>
+        <section className="container mx-auto py-[100px]">
+            <div className="section">
+                <h3 className="text-[1.5rem] text-center font-bold my-3 text-blue-light">Contact me</h3>
+                <form onSubmit={handelSubmit} className="flex flex-col gap-3">
+                    <div className="flex flex-row gap-2 items-center">
+                        <label htmlFor="username">username</label>
+                        <input
+                            value={inputVal}
+                            type="text"
+                            id="username"
+                            name="username"
+                            required
+                            className="input"
+                            placeholder="username"
+                            onChange={e => setInputVal(e.target.value)}
+                        />
+                    </div>
+                    <div className="flex flex-col gap-2">
+                        <label htmlFor="msg">message</label>
+                        <textarea
+                            value={textAreaVal}
+                            id="msg"
+                            name="msg"
+                            required
+                            className="input"
+                            placeholder="message"
+                            onChange={e => setTextAreaVal(e.target.value)}
+                        >
+                        </textarea>
+                    </div>
+                    <button type="submit" className="button ">Submit</button>
+                </form>
+            </div>
         </section>
-        <section className="container mx-auto my-4">
+        <section className="section">
             <button onClick={fetchMsgs} className="button mb-3">show messages</button>
             <div className="overflow-auto p-2" style={{maxHeight:"80vh"}}>
                 {msgs.map((item) => {
                     return(
-                        <div key={item.id} className="flex flex-col gap-2 bg-light p-3 border-[1] border-black rounded-md mb-2">
+                        <div key={item.id} className="flex flex-col gap-2 p-3 border-b-2 border-blue-light rounded-sm mb-2">
                             <span className="text-blue-light">{item.user}</span>
                             <p className="break-all">{item.msg}</p>
                         </div>
