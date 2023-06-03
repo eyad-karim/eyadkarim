@@ -3,6 +3,7 @@
 @tailwind utilities;
 html{
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth !important;
 }
 .input {
     @apply bg-light border-b-2 border-blue-dark text-black text-sm rounded-sm focus:border-blue-light block w-full p-2.5 outline-none
@@ -24,8 +25,8 @@ html{
     background-image:
     linear-gradient(to top, rgba(61, 2, 125, 0.633),rgba(16, 3, 63, 0.73)),
     url("/hero-bg.png");
-    background-position: left top;
-    background-size: 50%;
+    background-position: center;
+    background-size: 60%;
     background-attachment: fixed;
 }
 

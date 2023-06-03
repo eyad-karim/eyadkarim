@@ -65,17 +65,19 @@ function Contact() {
             </div>
         </section>
         <section className="section">
-            <button onClick={fetchMsgs} className="button mb-3">show messages</button>
-            <div className="overflow-auto p-2" style={{maxHeight:"80vh"}}>
-                {msgs.map((item) => {
-                    return(
-                        <div key={item.id} className="flex flex-col gap-2 p-3 border-b-2 border-blue-light rounded-sm mb-2">
-                            <span className="text-blue-light">{item.user}</span>
-                            <p className="break-all">{item.msg}</p>
-                        </div>
-                    )
-                })}
-            </div>
+            <button onClick={fetchMsgs} className="button">show messages</button>
+            {msgs[0] && (
+                <div className="overflow-auto p-2 mt-3" style={{maxHeight:"80vh"}}>
+                    {msgs.map((item) => {
+                        return(
+                            <div key={item.id} className="flex flex-col gap-2 p-3 border-b-2 border-blue-light rounded-sm mb-2">
+                                <span className="text-blue-light">{item.user}</span>
+                                <p className="break-all">{item.msg}</p>
+                            </div>
+                        )
+                    })}
+                </div>
+            )}
         </section>
     </>);
 }
