@@ -31,5 +31,16 @@ html{
 }
 
 .section{
-    @apply py-[100px] px-5 container mx-auto my-10 bg-white rounded-lg /*border-2 border-blue-light*/
+    @apply p-5 container mx-auto my-10 bg-white rounded-lg /*border-2 border-blue-light*/
+}
+.section .title {
+    @apply text-[1.5rem] text-center font-bold my-3 text-blue-light;
+}
+
+.code {
+    @apply bg-dark p-5 rounded-lg my-2 text-white
+}
+.code pre {
+    text-wrap: balance;
+    @apply font-mono;
 }

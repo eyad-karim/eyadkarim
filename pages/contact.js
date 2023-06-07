@@ -32,7 +32,7 @@ function Contact() {
         </Head>
         <section className="container mx-auto py-[100px]">
             <div className="section">
-                <h3 className="text-[1.5rem] text-center font-bold my-3 text-blue-light">Contact me</h3>
+                <h3 className="title">Contact me</h3>
                 <form onSubmit={handelSubmit} className="flex flex-col gap-3">
                     <div className="flex flex-row gap-2 items-center">
                         <label htmlFor="username">username</label>

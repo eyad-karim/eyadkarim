@@ -2,7 +2,7 @@ import AboutMeSection from '@/components/sections/aboutme';
 import HeroSection from './../components/sections/hero';
 import Head from 'next/head';
 import HowILearn from '@/components/sections/howilearn';
-import SOMP from '@/components/sections/SOMP';
+import MyProjects from '@/components/sections/myprojects';
 
 export default function Home() {
   return (
@@ -11,9 +11,9 @@ export default function Home() {
         <title>Home page</title>
       </Head>
       <HeroSection />
-      <SOMP />
       <AboutMeSection />
-      <HowILearn />
+      <MyProjects />
+      {/* <HowILearn /> */}
     </>
   )
 }
