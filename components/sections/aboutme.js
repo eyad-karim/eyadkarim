@@ -1,7 +1,7 @@
 function AboutMeSection() {
     var d = new Date()
     return (<>
-        <section className="code section">
+        <section className="code section" id="about-me">
             <h3 className="title">About me</h3>
             <pre>
                 <span className="text-code-blue">const</span> <span className="text-code-sky">person</span> = <span className="text-code-yellow">{"{"}</span><br/>

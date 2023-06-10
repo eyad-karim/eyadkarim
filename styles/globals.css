@@ -23,7 +23,7 @@ html{
 
 .hero-section {
     background-image:
-    linear-gradient(to top, rgba(61, 2, 125, 0.633),rgba(16, 3, 63, 0.73)),
+    linear-gradient(to top, rgba(2, 72, 125, 0.633),rgba(4, 26, 63, 0.73)),
     url("/hero-bg.png");
     background-position: center;
     background-size: 60%;
@@ -38,9 +38,10 @@ html{
 }
 
 .code {
-    @apply bg-dark p-5 rounded-lg my-2 text-white
+    @apply bg-code-default p-5 rounded-lg my-2 text-white
 }
 .code pre {
     text-wrap: balance;
     @apply font-mono;
+    /* color: #0a0a0a; */
 }

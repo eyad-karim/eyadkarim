@@ -17,9 +17,10 @@ module.exports = {
       black: "#000",
       white: "#fff",
       light: "#ecf0f1",
-      dark: "#1f1f1f",
+      dark: "#0a0a0a",
       blue: {light:"#0085ff",dark:"#000015"},
       code: {
+        default: "#1f1f1f",
         sky: "#92dcfc",
         brown: "#d5917b",
         blue: "#009bec",
