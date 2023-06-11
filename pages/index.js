@@ -1,7 +1,6 @@
 import AboutMeSection from '@/components/sections/aboutme';
 import HeroSection from './../components/sections/hero';
 import Head from 'next/head';
-import HowILearn from '@/components/sections/howilearn';
 import MyProjects from '@/components/sections/myprojects';
 
 export default function Home() {
